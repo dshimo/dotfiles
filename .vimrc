@@ -39,3 +39,7 @@ set wildmenu                " See other autocompletion options
 set wildmode=list:longest   " Completion behaves similar to a shell
 
 execute pathogen#infect()
+
+set mouse=a
+set ttyfast
+set ttymouse=xterm2

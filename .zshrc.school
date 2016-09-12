@@ -2,14 +2,14 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=~/.oh-my-zsh
+  export ZSH=/u/ds38352/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="wezm"
-ZSH_THEME="robbyrussell"
-#ZSH_THEME="ys"
+# ZSH_THEME="robbyrussell"
+ZSH_THEME="ys"
 
 
 # Uncomment the following line to use case-sensitive completion.
@@ -60,7 +60,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-# DEFAULT_USER="ds38352"
+DEFAULT_USER="ds38352"
 
 # why would you type 'cd dir' if you could just type 'dir'?
 setopt AUTO_CD

@@ -41,3 +41,5 @@ set wildmode=list:longest   " Completion behaves similar to a shell
 set mouse=a
 set ttyfast
 set ttymouse=xterm2
+
+colorscheme desert

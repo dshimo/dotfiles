@@ -1,7 +1,7 @@
 # dotfiles
-config dotfiles
+dshi's config dotfiles
 
 contains:
 .bashrc
-.vimrc
+.vimrc (For Nerdtree and Nerdtree-less)
 .zshrc

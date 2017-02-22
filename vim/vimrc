@@ -38,8 +38,12 @@ set softtabstop=4           " Tab is 4 spaces when reading
 set wildmenu                " See other autocompletion options
 set wildmode=list:longest   " Completion behaves similar to a shell
 
+
+""""""""""""""""""
+" Added Settings "
+""""""""""""""""""
 set mouse=a
 set ttyfast
 set ttymouse=xterm2
-
 colorscheme desert
+:imap '' <Esc>

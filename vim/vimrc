@@ -46,4 +46,4 @@ set mouse=a
 set ttyfast
 set ttymouse=xterm2
 colorscheme desert
-:imap '' <Esc>
+:imap jj <Esc>

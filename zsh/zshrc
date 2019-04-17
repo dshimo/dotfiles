@@ -2,15 +2,12 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=~/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# ZSH_THEME="wezm"
 ZSH_THEME="robbyrussell"
-#ZSH_THEME="ys"
-
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -110,3 +107,17 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+if [ $commands[kubectl] ]; then
+    source <(kubectl completion zsh)
+fi
+
+# Source kubectl_aliases
+[ -f ~/.kubectl_aliases ] && source ~/.kubectl_aliases
+
+# Alias Autojump as j
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
+# Use > as Prompt
+autoload -U promptinit; promptinit
+prompt pure

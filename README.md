@@ -6,3 +6,4 @@ contains:
 .vimrc  
 .zshrc  
 .tmux.conf  
+.kubectl_aliases
